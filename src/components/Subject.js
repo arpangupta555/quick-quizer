@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 const Subject = ({ subjects }) => {
 
     const { id, name, logo, total, questions } = subjects
-    console.log(subjects)
+
 
     return (
 
-        <div className='relative overflow-hidden transition duration-200 transform rounded shadow-lg 
+        <div className='relative bg-blue-100 overflow-hidden transition duration-200 transform rounded shadow-lg 
         hover:-translate-y-2 hover:shadow-2xl'>
             <img
                 className='object-cover w-full h-56 md:h-64 xl:h-80'

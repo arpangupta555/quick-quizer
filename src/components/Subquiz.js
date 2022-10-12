@@ -21,8 +21,8 @@ const Subquiz = ({ quizs }) => {
 
     return (
 
-        <div className='px-6 py-4'>
-            <div class="shadow-lg mt-5">
+        <div className='px-6 py-10'>
+            <div class="shadow-lg mt-3 px-6 py-10">
 
                 <div className=''>
 
@@ -42,8 +42,8 @@ const Subquiz = ({ quizs }) => {
                         type="radio"
 
 
-
                     /> {option} </div>)}
+
 
 
 

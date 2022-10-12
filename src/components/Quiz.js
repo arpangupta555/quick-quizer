@@ -6,17 +6,19 @@ const Quiz = () => {
 
 
     const loaderData = useLoaderData()
-    const quizData = loaderData.data.questions
+    const quizData = loaderData.data
 
 
     return (
         <div>
 
 
-            <h1 className='text-2xl'> {quizData.name}  </h1>
+            <div><h1 className='text-2xl mt-4'> Quiz of {quizData.name}  </h1></div>
+
+
             {
 
-                quizData.map(quizs => (<Subquiz key={quizs.id} quizs={quizs}></Subquiz>))
+                quizData.questions.map(quizs => (<Subquiz key={quizs.id} quizs={quizs}></Subquiz>))
             }
         </div>
     );

@@ -15,7 +15,7 @@ const Subquiz = ({ quizs }) => {
     const notify = () => toast(correctAnswer);
 
 
-
+    console.log(option);
 
 
 

@@ -1,9 +1,19 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import Sigstat from './Sigstat';
 
 const Statstic = () => {
+
+
+    const loaderData = useLoaderData()
+    const statData = loaderData.data
+
     return (
         <div>
-            <h1>This is STATISTICS</h1>
+
+
+            <Sigstat key={statData.id} statData={statData}></Sigstat>
+
         </div>
     );
 };

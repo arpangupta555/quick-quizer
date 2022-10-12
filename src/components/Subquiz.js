@@ -9,15 +9,11 @@ const Subquiz = ({ quizs }) => {
 
 
 
-    // const alart = () => {
-    //     alert("I am an alert box!");
-    // }
+
     const notify = () => toast(correctAnswer);
 
 
-    // const Sinoption = options.map(option => ({ option })
 
-    // console.log(Sinoption)
 
     return (
 
@@ -56,32 +52,7 @@ const Subquiz = ({ quizs }) => {
 
 
 
-                {/* <div className="options grid md:grid-cols-2 gap-4 p-4 text-left">
 
-                    {quizs.options.map((option, index) => (
-                        <div className="form-control" key={index}>
-
-                            <label className="label justify-start cursor-pointer">
-                                <input
-                                    type="radio"
-                                    name="radio"
-                                    onChange={() => {
-                                        if (quizs.correctAnswer === option) {
-                                            setCount(count + 1);
-                                            toast("Your Answer is Right!");
-                                        } else {
-                                            toast("Sorry! Your Answer is wrong!");
-                                        }
-                                    }}
-                                    className="radio checked:bg-red-500"
-                                />
-                                <span className="label-text ml-2">{option}</span>
-                            </label>
-
-                            <ToastContainer />
-                        </div>
-                    )};
-                </div> */}
 
 
 

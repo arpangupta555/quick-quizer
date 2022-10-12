@@ -7,10 +7,25 @@ const Subquiz = ({ quizs }) => {
 
 
     return (
-        <div>
-            <p>{question}</p>
-            {options.map(option => console.log(option))}
 
+        <div className='px-52 py-20'>
+            <div class="shadow-lg mt-5">
+
+                <h1 class="font-bold text-xl mb-2"> Question : {question.slice(3, -4)}</h1>
+                {
+
+                    options.map(option => <div>
+
+                        <div class="px-6 py-4">
+                            <div > <input type="radio" /> {options}</div>
+
+                        </div>
+
+                    </div>)
+                }
+
+
+            </div>
         </div>
     );
 };

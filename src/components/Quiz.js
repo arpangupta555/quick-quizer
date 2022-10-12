@@ -11,6 +11,9 @@ const Quiz = () => {
 
     return (
         <div>
+
+
+            <h1 className='text-2xl'> {quizData.name}  </h1>
             {
 
                 quizData.map(quizs => (<Subquiz key={quizs.id} quizs={quizs}></Subquiz>))

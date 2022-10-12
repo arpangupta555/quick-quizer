@@ -9,6 +9,9 @@ import Statstic from './components/Statstic';
 import ErrorPage from './components/ErrorPage';
 import Quiz from './components/Quiz';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const router = createBrowserRouter([
 
@@ -19,6 +22,22 @@ const router = createBrowserRouter([
     element: <Root></Root>,
     errorElement: <ErrorPage></ErrorPage>,
     children: [
+
+      {
+
+        path: '/home',
+        element: <Home></Home>,
+        loader: () => fetch('https://openapi.programming-hero.com/api/quiz')
+
+      },
+      {
+
+        path: '/',
+        element: <Home></Home>,
+        loader: () => fetch('https://openapi.programming-hero.com/api/quiz')
+
+      },
+
       {
 
         path: '/blog',
@@ -30,13 +49,6 @@ const router = createBrowserRouter([
         element: <Statstic></Statstic>,
         loader: () => fetch('https://openapi.programming-hero.com/api/quiz')
 
-
-      },
-      {
-
-        path: '/home',
-        element: <Home></Home>,
-        loader: () => fetch('https://openapi.programming-hero.com/api/quiz')
 
       },
 

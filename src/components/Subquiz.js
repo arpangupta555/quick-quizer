@@ -8,7 +8,7 @@ const Subquiz = ({ quizs }) => {
 
     return (
         <div>
-
+            <p>{question}</p>
             {options.map(option => console.log(option))}
 
         </div>

@@ -41,11 +41,17 @@ const Subquiz = ({ quizs }) => {
                         name="platform"
                         type="radio"
 
-                    /> {option}</div>)}
+
+
+                    /> {option} </div>)}
 
 
 
                 </div>
+
+
+
+
 
 
             </div>
